@@ -2,7 +2,7 @@
     <div class="d-flex flex-column flex-shrink-0 p-3 text-white sidebar-container">
         <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
             <li>
-                <a href="{{ route('index') }}" class="nav-link py-4 mb-5 icon {{ request()->is('/') ? 'active' : '' }}"><i
+                <a href="#" class="nav-link py-4 mb-5 icon {{ request()->is('/') ? 'active' : '' }}"><i
                         class="fa-solid fa-shop fa-3x" style="color: #ffffff;"></i></a>
             </li>
             <li>
@@ -14,7 +14,7 @@
                         style="color: #ffffff;"></i></a>
             </li>
             <li>
-                <a href="#" class="nav-link py-4 mb-5 icon"><i class="fa-solid fa-address-book fa-3x"
+                <a href="{{ route('index') }}" class="nav-link py-4 mb-5 icon"><i class="fa-solid fa-address-book fa-3x"
                         style="color: #ffffff;"></i></a>
             </li>
         </ul>
