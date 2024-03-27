@@ -6,7 +6,7 @@
         </div>
         <div class="col-11 p-0">
             @include('partials.navbar')
-
+            @include('partials.edit')
         </div>
     </div>
 @endsection

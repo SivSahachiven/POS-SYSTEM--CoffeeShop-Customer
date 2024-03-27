@@ -19,7 +19,7 @@ class FrontPageController extends Controller
      */
     public function create()
     {
-        //
+        return view('front_create');
     }
 
     /**
@@ -41,9 +41,10 @@ class FrontPageController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    // public function edit(string $id)
+    public function edit()
     {
-        //
+        return view('front_edit');
     }
 
     /**

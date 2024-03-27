@@ -16,3 +16,5 @@ use App\Http\Controllers\FrontPageController;
 
 
 Route::get('/', [FrontPageController::class, 'index'])->name('index');
+Route::get('edit', [FrontPageController::class, 'edit'])->name('edit');
+Route::get('create', [FrontPageController::class, 'create'])->name('create');
