@@ -1,7 +1,7 @@
 <?php
 
+use App\Http\Controllers\CustomerController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\FrontPageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +15,10 @@ use App\Http\Controllers\FrontPageController;
 */
 
 
-Route::get('/', [FrontPageController::class, 'index'])->name('index');
-Route::get('edit', [FrontPageController::class, 'edit'])->name('edit');
-Route::get('create', [FrontPageController::class, 'create'])->name('create');
+Route::get('/', [CustomerController::class, 'index'])->name('index');
+Route::get('edit', [CustomerController::class, 'edit'])->name('edit');
+Route::get('create', [CustomerController::class, 'create'])->name('create');
+
+//call it from customerCotroller
+Route::get('/customers/{id}/edit', [CustomerController::class, 'edit'])->name('customers.edit');
+Route::get('/customers/{id}/destroy', [CustomerController::class, 'destroy'])->name('customers.destroy');

@@ -16,7 +16,6 @@
                 </div>
             </form>
         </div>
-        {{-- @foreach ( as ) --}}
             <div class="table-responsive">
             <table class="table">
                 <thead>
@@ -32,23 +31,32 @@
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach ($customers as $customer)
                     <tr>
-                        <th class="p-3" scope="row">1</th>
-                        <td class="p-3">Makara</td>
+                        {{-- <th class="p-3" scope="row">1</th> --}}
+                        {{-- <td class="p-3">Makara</td>
                         <td class="p-3">KOI</td>
                         <td class="p-3">Makara@gmail.com</td>
                         <td class="p-3">012000000</td>
-                        <td class="p-3">Siemreap</td>
+                        <td class="p-3">Siemreap</td> --}}
+                        <td>{{ $customer->id }}</td>
+                        <td>{{ $customer->customer_name }}</td>
+                        <td>{{ $customer->company_name }}</td>
+                        <td>{{ $customer->email }}</td>
+                        <td>{{ $customer->phone}}</td>
+                        <td>{{ $customer->address}}</td>
+                        <td> {{ $customer->status }}</td>
                         <td class="p-3" >
-                            <a href="" type="button" class="btn btn-primary"><i class="fas fa-edit"
+                            <a href="{{ route('customers.edit',$customer->id) }}" type="button" class="btn btn-primary"><i class="fas fa-edit"
                                     style="color: #ffffff;"></i></a>
-                            <a href="" type="button" class="btn btn-danger"><i class="fas fa-trash"
+                            <a href="{{ route('customers.destroy',$customer->id) }}" type="button" class="btn btn-danger"><i class="fas fa-trash"
                                     style="color: #ffffff;"></i></a>
                         </td>
                     </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>
-        {{-- @endforeach --}}   
+
     </div>
 </div>
