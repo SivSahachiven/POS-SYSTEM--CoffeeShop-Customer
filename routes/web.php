@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [CustomerController::class, 'index'])->name('index');
 Route::get('edit', [CustomerController::class, 'edit'])->name('edit');
 Route::get('create', [CustomerController::class, 'create'])->name('create');
+Route::get('hidding', [CustomerController::class, 'hidding'])->name('hidding');
 
 //call it from customerCotroller
 Route::get('/customers/{id}/edit', [CustomerController::class, 'edit'])->name('customers.edit');

@@ -23,6 +23,11 @@ class CustomerController extends Controller
     {
         return view('front_create');
     }
+    public function hidding()
+    {
+        $data['customers']=Customer::get();
+        return view('front_hidding',$data);
+    }
 
     /**
      * Store a newly created resource in storage.

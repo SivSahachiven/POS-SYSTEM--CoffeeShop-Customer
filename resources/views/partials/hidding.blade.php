@@ -1,6 +1,6 @@
 <div class="list-group w-auto p-3" style="border-radius: 10px">
     <div class="list-group-item" style="background-color: #3559E0" aria-current="true">
-        <h4 style="color: #FFFFFF;"><b>Customer List</b></h4>
+        <h4 style="color: #FFFFFF;"><b>Hidding List</b></h4>
     </div>
     <div class="list-group-item">
         <div class="p-2 mt-3">
@@ -9,12 +9,8 @@
                     <input type="search" class="form-control search-bar me-5" style="border-radius: 10px"
                         placeholder="Search for something" aria-label="Search" aria-describedby="search-addon" /> 
                     <div class="">
-                        
-                        <a href="{{ route('hidding') }}" class="btn btn-primary "
-                        style="background-color: #3559E0; margin-left: 22vw;"><i class="fas fa-eye-slash" style="color: #ffffff;"></i> Hide</a>
-                        <a href="{{ route('create') }}" class="btn btn-primary "
-                        style="background-color: #3559E0; "><i class="fas fa-plus-circle fa-lg"
-                        style="color: #ffffff;"></i> Add New Customer</a>
+                        <a href="{{ route('index') }}" class="btn btn-primary "
+                        style="background-color: #3559E0; margin-left: 22vw;"><i class="fas fa-eye-slash" style="color: #ffffff;"></i> UnHide</a>
                     </div>
                 </div>
             </form>
@@ -36,7 +32,7 @@
                 <tbody>
                     @foreach ($customers as $customer)
                     <tr>
-                        @if ($customer->is_hidding == 0)
+                        @if ($customer->is_hidding !=0)
                         <td>{{ $customer->id }}</td>
                         <td>{{ $customer->customer_name }}</td>
                         <td>{{ $customer->company_name }}</td>
