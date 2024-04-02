@@ -22,3 +22,6 @@ Route::get('create', [CustomerController::class, 'create'])->name('create');
 //call it from customerCotroller
 Route::get('/customers/{id}/edit', [CustomerController::class, 'edit'])->name('customers.edit');
 Route::get('/customers/{id}/destroy', [CustomerController::class, 'destroy'])->name('customers.destroy');
+Route::post('/customers/{id}/update', [CustomerController::class, 'update'])->name('customers.update');
+Route::post('/customers/store', [CustomerController::class, 'store'])->name('customers.store');
+

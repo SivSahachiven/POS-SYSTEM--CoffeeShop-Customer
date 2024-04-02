@@ -35,7 +35,7 @@ class CustomerController extends Controller
             'email' => 'required',
             'phone' => 'required',
             'address' => 'required',
-            'is_hidding' => 'required',
+            //'is_hidding' => 'required'
             // 'status' => 'required',
         ]);
 
@@ -44,7 +44,7 @@ class CustomerController extends Controller
                     'email' => $request->email,
                     'phone' => $request->phone,
                     'address' => $request->address,
-                    'is_hidding'=>$request->status=='on'?1:0
+                    'is_hidding'=>$request->is_hidding=='on'?1:0
                 ];
         Customer::create($saveData);
 
@@ -81,7 +81,7 @@ class CustomerController extends Controller
                         'email' => $request->email,
                         'phone' => $request->phone,
                         'address' => $request->address,
-                        'is_hidding'=>$request->status=='on'?1:0
+                        'is_hidding'=>$request->is_hidding=='on'?1:0
                             ];
 
 		$editData->update($editDataRecord);
@@ -101,3 +101,4 @@ class CustomerController extends Controller
         return redirect()->route('index')->with('success','Customerslist has been deleted successfully');
     }
 }
+// not yet route to create page
