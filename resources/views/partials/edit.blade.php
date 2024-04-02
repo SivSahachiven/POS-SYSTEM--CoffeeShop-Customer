@@ -47,7 +47,7 @@
                       
                       <div class="d-grid gap-1 d-md-flex justify-content-md-end position-absolute bottom-0 end-0" style="padding:0 25px 25px 0" >
                         <button style="border-radius: 20px; width:110px;" type="submit" class="btn btn-primary">Update</button>
-                        <a href="{{ route('index') }}" style="border-radius: 20px; width:110px;" class="btn btn-primary" type="button">Cancel</a>
+                        <a href="{{ route('index') }}" style="border-radius: 20px; width:110px;" class="btn btn-danger" type="button">Cancel</a>
                       </div>
                     </div>
               </div>

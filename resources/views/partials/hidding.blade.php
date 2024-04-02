@@ -8,7 +8,7 @@
                 <div class="input-group inline">
                     <input type="search" class="form-control search-bar me-5" style="border-radius: 10px"placeholder="Search for something........." aria-label="Search" aria-describedby="search-addon" /> 
                     <div class="">
-                        <a href="{{ route('index') }}" class="btn btn-primary " style="background-color: #3559E0; margin-left: 22vw;"><i class="fas fa-eye-slash" style="color: #ffffff;"></i> UnHide</a>
+                        <a href="{{ route('index') }}" class="btn btn-primary " style="background-color: red; margin-left: 22vw;"><i class="fas fa-eye-slash" style="color: #ffffff;"></i> UnHide</a>
                     </div>
                 </div>
             </form>
