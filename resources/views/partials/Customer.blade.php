@@ -6,8 +6,7 @@
         <div class="p-2 mt-3">
             <form action="/search" method="GET">
                 <div class="input-group inline">
-                    <input type="search" class="form-control search-bar me-5" style="border-radius: 10px"
-                        placeholder="Search for something" aria-label="Search" aria-describedby="search-addon" /> 
+                    <input type="search" class="form-control search-bar me-5" style="border-radius: 10px"placeholder="Search for something........." aria-label="Search" aria-describedby="search-addon" /> 
                     <div class="">
                         
                         <a href="{{ route('hidding') }}" class="btn btn-primary "

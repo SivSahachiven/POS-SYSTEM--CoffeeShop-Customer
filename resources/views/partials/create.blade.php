@@ -12,19 +12,19 @@
                             
                           <div class="mb-3">
                             <label for="disabledTextInput" class="form-label">Customer Name</label>
-                            <input type="text" name="customer_name" id="customer_name" class="form-control" placeholder="Disabled input">
+                            <input type="text" name="customer_name" id="customer_name" class="form-control" placeholder="Enter Your CustomerName">
                           </div>
                           <div class="mb-3">
                             <label for="disabledTextInput" class="form-label">Company Name</label>
-                            <input type="text" name="company_name" id="company_name" class="form-control" placeholder="Disabled input">
+                            <input type="text" name="company_name" id="company_name" class="form-control" placeholder="Enter CompanyName">
                           </div>
                           <div class="mb-3">
                             <label for="disabledTextInput" class="form-label">Email</label>
-                            <input type="text" name="email" id="email" class="form-control" placeholder="Disabled input">
+                            <input type="text" name="email" id="email" class="form-control" placeholder="Enter Email">
                           </div>
                           <div class="mb-3">
                             <label for="disabledTextInput" class="form-label">Phone Number</label>
-                            <input type="text" name="phone" id="phone" class="form-control" placeholder="Disabled input">
+                            <input type="text" name="phone" id="phone" class="form-control" placeholder="Enter PhoneNumber">
                           </div>
                           <div class="mb-3">
                             <div class="form-check">
@@ -35,7 +35,7 @@
                       <div class="col-6">
                         <div class="mb-3">
                           <label for="disabledTextInput" class="form-label">Address</label>
-                          <textarea name="address" style="height: 150px; vertical-align: top;" id="address" class="form-control" placeholder=""></textarea>
+                          <textarea name="address" style="height: 150px; vertical-align: top;" id="address" class="form-control" placeholder="Enter Email"></textarea>
                         </div>
                         
                         
