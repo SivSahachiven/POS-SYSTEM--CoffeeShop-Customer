@@ -61,4 +61,27 @@ body{
     width: 100px;
     border-radius: 15px;
 }
-
+#text{
+    color: blue;
+}
+input::placeholder {
+    color: blue !important;
+}
+textarea::placeholder {
+    color: blue !important;
+}
+input[type="text"] {
+    border: 2px solid blue; /* Sets border to blue */
+    padding: 8px; /* Optionally add padding for better appearance */
+}
+textarea{
+    border: 2px solid blue !important; /* Sets border to blue */ 
+    padding: 8px; /* Optionally add padding for better appearance */
+}
+input{
+    color: blue !important;
+}
+.blue-text {
+    color: blue;
+  }
+  

@@ -14,7 +14,7 @@
             </form>
         </div>
             <div class="table-responsive">
-            <table class="table">
+            <table class="table" id="text">
                 <thead>
                     <tr>
                         <th class="p-3" scope="col">#</th>

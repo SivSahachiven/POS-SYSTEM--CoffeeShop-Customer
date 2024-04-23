@@ -10,10 +10,25 @@ class CustomerController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
         $data['customers']=Customer::get();
         return view('index',$data);
+        // $query_param = [];
+
+        // $customers = Customer::when($request->has('search'), function ($query) use ($request) {
+        //     $key = explode(' ', $request['search']);
+        //     $query->where(function ($q) use ($key) {
+        //         foreach ($key as $value) {
+        //             $q->orWhere('customer_name', 'like', "%{$value}%")
+        //                 ->orWhere('id', 'like', "%{$value}%");
+        //         }
+        //     });
+        // })->get();
+
+        // $query_param = $request->has('search') ? ['search' => $request['search']] : [];
+
+        // return view('index', compact('customers', 'query_param'));
     }
 
     /**

@@ -17,9 +17,28 @@
                     </div>
                 </div>
             </form>
+            {{-- Option 1 --}}
+
+            {{-- <form role="search" action="{{ url()->current() }}" method="GET">
+                @csrf
+                <div class="input-group inline">
+                    <input type="text" class="form-control search-bar" name="search" style="border-radius: 10px"
+                        placeholder="Search for something" aria-label="Search" />
+
+                    <div>
+                        <a href="{{ route('hidding') }}" class="btn btn-primary "
+                            style="background-color: #3559E0; margin-left: 18vw;"><i class="fas fa-eye-slash"
+                                style="color: #ffffff;"></i> Hide</a>
+                        <a href="{{ route('create') }}" class="btn btn-primary "
+                            style="background-color: #3559E0;"><i class="fas fa-plus-circle fa-lg"
+                                style="color: #ffffff;"></i> Add New Customer</a>
+                    </div>
+                </div>
+            </form> --}}
+            {{-- option 2 --}}
         </div>
             <div class="table-responsive">
-            <table class="table">
+            <table class="table" id="text">
                 <thead>
                     <tr>
                         <th class="p-3" scope="col">#</th>
@@ -46,8 +65,13 @@
                         <td class="p-3" >
                             <a href="{{ route('customers.edit',$customer->id) }}" type="button" class="btn btn-primary"><i class="fas fa-edit"
                                     style="color: #ffffff;"></i></a>
-                            <a href="{{ route('customers.destroy',$customer->id) }}" type="button" class="btn btn-danger"><i class="fas fa-trash"
-                                    style="color: #ffffff;"></i></a>
+                            {{-- <a href="{{ route('customers.destroy',$customer->id) }}" type="button" data-target="#confirmDeleteModal" class="btn btn-danger deleteButton"><i class="fas fa-trash"
+                                    style="color: #ffffff;"></i></a> --}}
+                             <button type="button" class="btn btn-danger deleteButton"
+                                            data-id="{{ $customer->id }}" data-toggle="modal"
+                                            data-target="#confirmDeleteModal">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
                         </td>
                         @endif
                         {{-- <th class="p-3" scope="row">1</th> --}}

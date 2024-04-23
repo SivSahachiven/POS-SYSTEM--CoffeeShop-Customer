@@ -19,6 +19,7 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
 
@@ -46,8 +47,6 @@
     <script src="{{ asset('bootstrap') }}/js/bootstrap.bundle.min.js"></script>
     {{-- Sidebar Template .js --}}
     <script src="{{ asset('bootstrap-assets/sidebars') }}/sidebars.js"></script>
-
-
 </body>
 
 </html>
