@@ -65,13 +65,8 @@
                         <td class="p-3" >
                             <a href="{{ route('customers.edit',$customer->id) }}" type="button" class="btn btn-primary"><i class="fas fa-edit"
                                     style="color: #ffffff;"></i></a>
-                            {{-- <a href="{{ route('customers.destroy',$customer->id) }}" type="button" data-target="#confirmDeleteModal" class="btn btn-danger deleteButton"><i class="fas fa-trash"
-                                    style="color: #ffffff;"></i></a> --}}
-                             <button type="button" class="btn btn-danger deleteButton"
-                                            data-id="{{ $customer->id }}" data-toggle="modal"
-                                            data-target="#confirmDeleteModal">
-                                            <i class="fa fa-trash"></i>
-                                        </button>
+                            <a href="{{ route('customers.destroy',$customer->id) }}" data-id="{{$customer->id}}" type="button" data-target="#confirmDeleteModal" class="btn btn-danger deleteButton"><i class="fas fa-trash"
+                                    style="color: #ffffff;"></i></a>
                         </td>
                         @endif
                         {{-- <th class="p-3" scope="row">1</th> --}}
